@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayakumar K</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .projects-page-section {
+            padding: 8rem 2rem 5rem;
+            max-width: 1200px; margin: 0 auto;
+            min-height: calc(100vh - 64px - 300px);
+        }
+        .page-header { text-align: center; margin-bottom: 4rem; }
+        .page-header h1 {
+            font-family: var(--font-heading); font-size: 3rem; font-weight: 700;
+            color: var(--text-dark); margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;
+        }
+        
+        .projects-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+        }
+        
+        /* Copying styles from main.js carousel project card for consistency */
+        .project-card {
+            background: var(--card); border-radius: 20px; overflow: hidden;
+            border: 1px solid var(--border); box-shadow: var(--shadow-card);
+            transition: all var(--transition); display: flex; flex-direction: column;
+            width: 100%; height: 100%;
+        }
+        .project-card:hover { box-shadow: 0 24px 80px rgba(201,161,43,0.35); transform: translateY(-4px); }
+        .project-img { width: 100%; height: 200px; overflow: hidden; }
+        .project-banner { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform var(--transition); }
+        .project-card:hover .project-banner { transform: scale(1.05); }
+        .project-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+        .project-content h3 { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .project-content p { font-size: 0.85rem; color: var(--text-body); line-height: 1.6; margin-bottom: 0.75rem; flex: 1; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+        .project-tags span {
+            background: rgba(201,161,43,0.1); color: #8c6e26;
+            padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.7rem; font-weight: 600;
+        }
+        .project-links { display: flex; gap: 0.75rem; }
+        
+        @media(max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media(max-width: 768px) { .projects-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Vijay</div>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="projects.html" class="active-link">Projects</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="contact.html" class="nav-cta">Hire Me</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="projects.html" class="active-link">Projects</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="contact.html">Hire Me</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-page-section">
+            <div class="page-header reveal">
+                <h1>All Projects</h1>
+                <p>A comprehensive view of my systems architecture, AI pipelines, and application builds.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/detectionn.png" alt="Real-Time Defect Classification" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>Real-Time Defect Classification</h3>
+                        <p>92% accuracy model for industrial defect detection using computer vision and deep learning.</p>
+                        <div class="project-tags"><span>YOLOv8</span><span>FastAPI</span><span>OpenCV</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vijayakumar226/Real-Time-Defect-Classification-in-Manufacturing-Using-Machine-Learning-and-Image-Processing" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/bank chatbot.png" alt="Voice-Enabled Banking Assistant" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>Voice-Enabled Banking Assistant</h3>
+                        <p>Voice-based AI assistant for banking queries utilizing LLMs and RAG pipelines with speech recognition.</p>
+                        <div class="project-tags"><span>LLaMA</span><span>FAISS</span><span>Whisper</span><span>RAG</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vijayakumar226/Voice-Enabled-Intelligent-Banking-Assistant-using-RAG-and-Large-Language-Models" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/sdlc.png" alt="Generative AI Tools for Automated SDLC" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>Generative AI Tools for Automated SDLC</h3>
+                        <p>Automates project planning and software development workflows using Large Language Models.</p>
+                        <div class="project-tags"><span>LLM</span><span>Streamlit</span><span>API</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vijayakumar226/Generative-AI-Tools-for-Automated-SDLC.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/n8n.png" alt="HR Resume Screening Automation" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>HR Resume Screening Automation</h3>
+                        <p>AI workflow reducing manual HR effort by 60% with automated pipeline integrations.</p>
+                        <div class="project-tags"><span>n8n</span><span>Gmail API</span><span>Google Sheets</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vijayakumar226/AI-Powered-HR-Resume-Screening-Automation-using-n8n" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/Q-A-Agent.png" alt="Q&A AI Agent for Renewable Energy" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>Q&A AI Agent for Renewable Energy</h3>
+                        <p>AI-based question-answering system focused on renewable energy domain using LLM techniques.</p>
+                        <div class="project-tags"><span>LLM</span><span>AI Agent</span><span>NLP</span></div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vijayakumar226/Q-A-AI-Agent-for-renewable-energy.git" target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal">
+                    <div class="project-img"><img src="images/netflix.png" alt="Netflix Data Analysis Dashboard" class="project-banner"></div>
+                    <div class="project-content">
+                        <h3>Netflix Data Analysis Dashboard</h3>
+                        <p>Interactive Power BI dashboard analyzing Netflix dataset with insights on content trends, genres, and user patterns.</p>
+                        <div class="project-tags"><span>Power BI</span><span>Data Analysis</span><span>Dashboard</span></div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-name">Vijayakumar K</h3>
+                <p class="footer-desc">
+                    Machine Learning Engineer & Generative AI Enthusiast.<br>
+                    Building intelligent systems that solve real-world problems.
+                </p>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/Vijayakumar226" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/vijayakumar-k" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:vijayakumar020206@gmail.com?subject=Project%20Inquiry&body=Hello%20Vijayakumar%2C%20I%20would%20like%20to%20discuss%20a%20project." aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="index.html#experience">Experience</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="footer-buttons">
+                    <a href="mailto:vijayakumar020206@gmail.com?subject=Project%20Inquiry&body=Hello%20Vijayakumar%2C%20I%20would%20like%20to%20discuss%20a%20project." class="footer-btn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="contact.html" class="footer-btn"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                    <a href="https://linkedin.com/in/vijayakumar-k" target="_blank" class="footer-btn"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/Vijayakumar226" target="_blank" class="footer-btn"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vijayakumar K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const mobileNav = document.getElementById('mobileNav');
+        if (navToggle && mobileNav) {
+            navToggle.addEventListener('click', () => mobileNav.classList.toggle('active'));
+        }
+
+        // Simple scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

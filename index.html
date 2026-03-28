@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijayakumar K</title>
+    <meta name="description"
+        content="Portfolio of Vijayakumar K, a Machine Learning Engineer specializing in Deep Learning, Computer Vision, and Generative AI.">
+    <meta name="author" content="Vijayakumar K">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-pattern"></div>
+
+    <!-- ====== NAVBAR ====== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Vijay</a>
+            <div class="nav-links" id="desktopNav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact" class="nav-cta">Hire Me</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+        <!-- ====== HERO ====== -->
+        <section id="home" class="hero-section">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <p class="hero-tagline">BUILDING &mdash; LEARNING &mdash; SCALING</p>
+                    <h1 class="hero-name">Vijayakumar K</h1>
+                    <p class="hero-desc">
+                        Machine Learning Engineer with hands-on experience building
+                        intelligent systems using AI, Deep Learning, Computer Vision,
+                        and Large Language Models. Focused on real-world problem solving
+                        and delivering impactful AI solutions.
+                    </p>
+                    <div class="hero-social-icons">
+                        <a href="https://github.com/Vijayakumar226" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vijayakumar-k" target="_blank" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:vijayakumar020206@gmail.com?subject=Project%20Inquiry&body=Hello%20Vijayakumar%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                            aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                        <a href="assets/resume.pdf" download class="btn-outline"><i class="fas fa-download"></i>
+                            Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="terminal-card" id="heroTerminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <span class="terminal-title">portfolio-terminal</span>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <!-- Lines typed dynamically by JS -->
+                            <div class="term-cursor-line">
+                                <span class="term-typed" id="currentLine"></span><span class="caret">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ABOUT ====== -->
+        <section id="about" class="section">
+            <p class="section-label">ABOUT ME</p>
+            <h2 class="section-heading">Get to know me better</h2>
+            <div class="about-grid">
+                <div class="about-image-col reveal">
+                    <div class="about-img-wrapper">
+                        <img src="images/about%20me.jpeg" alt="Vijayakumar K" class="about-photo">
+                    </div>
+                </div>
+                <div class="about-text-col">
+                    <p class="about-para">
+                        I am an AI & Data Science student with practical experience building
+                        intelligent systems using technologies like Python, TensorFlow, PyTorch,
+                        and Large Language Models. I enjoy developing real-world ML solutions
+                        and connecting them with efficient pipelines and APIs to create smooth
+                        and reliable AI experiences.
+                    </p>
+                    <p class="about-para">
+                        I have worked on several projects such as a Real-Time Defect Classification
+                        system, a Voice Banking Assistant, and AI automation tools. These projects
+                        helped me gain experience in deep learning, computer vision, NLP,
+                        and deploying ML applications.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <p class="stat-label">EXPERIENCE</p>
+                                <p class="stat-value">6 Months</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div>
+                                <p class="stat-label">TECH STACK</p>
+                                <p class="stat-value">Machine Learning</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                            <div>
+                                <p class="stat-label">PROJECTS DELIVERED</p>
+                                <p class="stat-value">10+</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-bolt"></i></div>
+                            <div>
+                                <p class="stat-label">STATUS</p>
+                                <p class="stat-value">Open to Work</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SKILLS ====== -->
+        <section id="skills" class="section">
+            <p class="section-label">TECHNICAL SKILLS</p>
+            <h2 class="section-heading">My Tech Stack</h2>
+            <p class="section-subtitle">Proficient in a wide range of modern AI/ML technologies and frameworks</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon" style="background:#e8f5e9;color:#43a047;"><i class="fas fa-code"></i></div>
+                    <h3 class="skill-cat-title">Languages</h3>
+                    <div class="skill-bars">
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Python</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Java</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">C</span><span class="skill-pct">0%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">SQL</span><span class="skill-pct">0%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">JavaScript</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background:#fff3e0;color:#ef6c00;"><i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="skill-cat-title">Frameworks</h3>
+                    <div class="skill-bars">
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">TensorFlow</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">PyTorch</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Scikit-learn</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Keras</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">FastAPI</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background:#fce4ec;color:#e91e63;"><i class="fas fa-book"></i></div>
+                    <h3 class="skill-cat-title">Libraries</h3>
+                    <div class="skill-bars">
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Pandas</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">NumPy</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">OpenCV</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">NLTK</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">LangChain</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon" style="background:#ede7f6;color:#7e57c2;"><i class="fas fa-wrench"></i>
+                    </div>
+                    <h3 class="skill-cat-title">Tools & Deployment</h3>
+                    <div class="skill-bars">
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Git & GitHub</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Streamlit</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">VS Code</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Jupyter</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-item"><span class="skill-name">Docker</span><span
+                                    class="skill-pct">0%</span></div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" data-width="72"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PROJECTS (CAROUSEL) ====== -->
+        <section id="projects" class="section">
+            <p class="section-label">PROJECTS</p>
+            <h2 class="section-heading"><em>Selected Work</em></h2>
+            <p class="section-subtitle">Production-grade builds with architecture decisions, measurable outcomes, and
+                case-study depth.</p>
+
+            <div class="carousel-wrapper">
+                <button class="carousel-btn carousel-prev" id="carouselPrev"><i
+                        class="fas fa-chevron-left"></i></button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Card 1 -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/detectionn.png"
+                                        alt="Real-Time Defect Classification" class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>Real-Time Defect Classification</h3>
+                                    <p>92% accuracy model for industrial defect detection using computer vision and deep
+                                        learning.</p>
+                                    <div class="project-tags"><span>YOLOv8</span><span>FastAPI</span><span>OpenCV</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="defect"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="https://github.com/Vijayakumar226/Real-Time-Defect-Classification-in-Manufacturing-Using-Machine-Learning-and-Image-Processing"
+                                            target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/bank chatbot.png"
+                                        alt="Voice-Enabled Banking Assistant" class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>Voice-Enabled Banking Assistant</h3>
+                                    <p>Voice-based AI assistant for banking queries utilizing LLMs and RAG pipelines
+                                        with speech recognition.</p>
+                                    <div class="project-tags">
+                                        <span>LLaMA</span><span>FAISS</span><span>Whisper</span><span>RAG</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="banking"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="https://github.com/Vijayakumar226/Voice-Enabled-Intelligent-Banking-Assistant-using-RAG-and-Large-Language-Models"
+                                            target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/sdlc.png" alt="AI SDLC Automation Tool"
+                                        class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>Generative AI Tools for Automated SDLC</h3>
+                                    <p>Automates project planning and software development workflows using Large
+                                        Language Models.</p>
+                                    <div class="project-tags"><span>LLM</span><span>Streamlit</span><span>API</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="sdlc"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="https://github.com/Vijayakumar226/Generative-AI-Tools-for-Automated-SDLC.git"
+                                            target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/n8n.png" alt="HR Resume Screening Automation"
+                                        class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>HR Resume Screening Automation</h3>
+                                    <p>AI workflow reducing manual HR effort by 60% with automated pipeline
+                                        integrations.</p>
+                                    <div class="project-tags"><span>n8n</span><span>Gmail API</span><span>Google
+                                            Sheets</span></div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="hr"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="https://github.com/Vijayakumar226/AI-Powered-HR-Resume-Screening-Automation-using-n8n"
+                                            target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 - NEW -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/Q-A-Agent.png"
+                                        alt="Q&A AI Agent for Renewable Energy" class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>Q&A AI Agent for Renewable Energy</h3>
+                                    <p>AI-based question-answering system focused on renewable energy domain using LLM
+                                        techniques.</p>
+                                    <div class="project-tags"><span>LLM</span><span>AI Agent</span><span>NLP</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="qa"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="https://github.com/Vijayakumar226/Q-A-AI-Agent-for-renewable-energy.git"
+                                            target="_blank" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 - NEW -->
+                        <div class="carousel-slide">
+                            <div class="project-card">
+                                <div class="project-img"><img src="images/netflix.png"
+                                        alt="Netflix Data Analysis Dashboard" class="project-banner"></div>
+                                <div class="project-content">
+                                    <h3>Netflix Data Analysis Dashboard</h3>
+                                    <p>Interactive Power BI dashboard analyzing Netflix dataset with insights on content
+                                        trends, genres, and user patterns.</p>
+                                    <div class="project-tags"><span>Power BI</span><span>Data
+                                            Analysis</span><span>Dashboard</span></div>
+                                    <div class="project-links">
+                                        <button class="proj-link explore-btn" data-project="netflix"><i
+                                                class="fas fa-search-plus"></i> Explore More</button>
+                                        <a href="#" class="proj-link"><i class="fab fa-github"></i> Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-next" id="carouselNext"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+
+            <!-- ====== EXPLORE MORE BANNER ====== -->
+            <div class="explore-banner reveal" style="margin-top: 4rem;">
+                <div class="explore-content">
+                    <span class="explore-label">👉 MORE PORTFOLIO</span>
+                    <h2 class="explore-heading">Explore all projects and case studies</h2>
+                    <p class="explore-desc">Open the complete project archive for architecture notes, outcomes, and
+                        implementation details.</p>
+                </div>
+                <div class="explore-actions">
+                    <a href="projects.html" class="btn-primary" style="margin: 0;">View More Projects <i
+                            class="fas fa-arrow-up-right-from-square" style="font-size: 0.9em;"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ACHIEVEMENTS ====== -->
+        <section id="achievements" class="section">
+            <p class="section-label">ACHIEVEMENTS</p>
+            <h2 class="section-heading">Recognition & Awards</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fas fa-newspaper"></i></div>
+                    <h4>IEEE Publication</h4>
+                    <p>ICVADV 2026</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>Winner</h4>
+                    <p>Kurukshetra 2024</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Participant</h4>
+                    <p>Intel GenAI Hackathon</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="ach-icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h4>FOSSEE Mapathon</h4>
+                    <p>IIT Bombay</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== EXPERIENCE ====== -->
+        <section id="experience" class="section">
+            <p class="section-label">EXPERIENCE</p>
+            <h2 class="section-heading">Where I've Worked</h2>
+            <div class="experience-timeline">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-robot"></i></div>
+                        <div>
+                            <h3>Deep Learning Intern</h3>
+                            <p class="exp-company">Sanwa Synergy</p>
+                        </div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Developed YOLO-based defect detection system for industrial applications</li>
+                        <li>Improved model accuracy by 18% through data augmentation and fine-tuning</li>
+                        <li>Deployed inference pipeline using FastAPI for real-time predictions</li>
+                    </ul>
+                    <div class="exp-tags"><span>YOLOv8</span><span>OpenCV</span><span>FastAPI</span><span>Python</span>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <h3>Generative AI Intern</h3>
+                            <p class="exp-company">DeffoTech</p>
+                        </div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Built a Tamil QA LLM using advanced prompting techniques</li>
+                        <li>Implemented RAG pipelines for domain-specific question answering</li>
+                        <li>Explored prompt engineering for production-grade AI chatbots</li>
+                    </ul>
+                    <div class="exp-tags"><span>LLaMA</span><span>RAG</span><span>Prompt
+                            Engineering</span><span>NLP</span></div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-database"></i></div>
+                        <div>
+                            <h3>Data Science Intern</h3>
+                            <p class="exp-company">EISystems</p>
+                        </div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Completed comprehensive Data Science training program</li>
+                        <li>Prepared detailed internship report covering key DS methodologies</li>
+                    </ul>
+                    <div class="exp-tags"><span>Data Science</span><span>Python</span><span>Analytics</span></div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <h3>Data Science & AIML Intern</h3>
+                            <p class="exp-company">YBI Foundation</p>
+                        </div>
+                    </div>
+                    <ul class="exp-list">
+                        <li>Hands-on training in AI/ML concepts and applications</li>
+                        <li>Built practical ML models for real-world datasets</li>
+                    </ul>
+                    <div class="exp-tags"><span>AI/ML</span><span>Python</span><span>Machine Learning</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CTA SECTION (from reference) ====== -->
+        <section id="contact" class="section cta-section">
+            <div class="cta-card">
+                <h2 class="cta-heading">Let's Connect and Build<br><span class="cta-accent">Something Advanced</span>
+                </h2>
+                <p class="cta-subtitle">From strategy to launch: architecture, clean code, performance,<br>and execution
+                    that ships real value.</p>
+                <a href="contact.html" class="btn-primary cta-btn">Start The Conversation <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ====== FOOTER (matching reference) ====== -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-name">Vijayakumar K</h3>
+                <p class="footer-desc">Machine Learning Engineer building intelligent systems using AI, Deep Learning,
+                    and LLMs. Focused on creating impactful AI solutions and real-world automation.</p>
+                <div class="footer-social-icons">
+                    <a href="https://github.com/Vijayakumar226" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/vijayakumar-k" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:vijayakumar020206@gmail.com?subject=Project%20Inquiry&body=Hello%20Vijayakumar%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                        aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <div class="footer-buttons">
+                    <a href="mailto:vijayakumar020206@gmail.com?subject=Project%20Inquiry&body=Hello%20Vijayakumar%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                        class="footer-btn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="assets/resume.pdf" target="_blank" class="footer-btn"><i class="fas fa-file-alt"></i>
+                        Resume</a>
+                    <a href="https://linkedin.com/in/vijayakumar-k" target="_blank" class="footer-btn"><i
+                            class="fab fa-linkedin-in"></i> LinkedIn</a>
+                    <a href="https://github.com/Vijayakumar226" target="_blank" class="footer-btn"><i
+                            class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vijayakumar K. Built with passion for AI.</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-card">
+            <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <div class="modal-body" id="modalBody"></div>
+            <div class="modal-footer">
+                <a href="#" class="btn-primary" id="modalGithub" target="_blank"><i class="fab fa-github"></i> View on
+                    GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
