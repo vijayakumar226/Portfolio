@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== 5. HERO TERMINAL TYPING EFFECT ==========
     const terminalLines = [
         '> Hello, I am Vijayakumar K',
-        '$ > Role :Machine Learning Engineer | Generative AI',
+        '$ > Role :Machine Learning Engineer | Generative AI Engineer',
         '$ > Building intelligent AI systems, Web applications...',
         '$ > Skills: Python, TensorFlow, PyTorch, Scikit-learn, YOLO, NLTK',
         '$ > Focus: Agentic Workflows, RAG Architectures, Deep Learning',
