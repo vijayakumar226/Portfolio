@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ========== 3. SMOOTH SCROLL ==========
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const target = document.querySelector(this.getAttribute('href'));
-            if (target) { e.preventDefault(); target.scrollIntoView({ behavior:'smooth', block:'start' }); }
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
         });
     });
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== 5. HERO TERMINAL TYPING EFFECT ==========
     const terminalLines = [
         '> Hello, I am Vijayakumar K',
-        '$ > Role :Machine Learning Engineer | Generative AI',
+        '$ > Role :Machine Learning Engineer | Generative AI Engineer',
         '$ > Building intelligent AI systems, Web applications...',
         '$ > Skills: Python, TensorFlow, PyTorch, Scikit-learn, YOLO, NLTK',
         '$ > Focus: Agentic Workflows, RAG Architectures, Deep Learning',
@@ -374,15 +374,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         if (!bar || !pct) return;
 
                         const targetVal = parseInt(bar.dataset.width);
-                        
+
                         // 1. Animate Width
                         bar.style.width = targetVal + '%';
-                        
+
                         // 2. Animate Counter smoothly over ~1.5s
                         let currentVal = 0;
-                        const duration = 1500; 
+                        const duration = 1500;
                         const stepTime = Math.max(20, duration / targetVal);
-                        
+
                         const counter = setInterval(() => {
                             currentVal += 1;
                             pct.textContent = currentVal + '%';
